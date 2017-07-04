@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#123456"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnchiefs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHIEFS"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnpirates"
+        android:layout_alignStart="@+id/btnpirates" />
+
+
+    <Button
+        android:id="@+id/btnpirates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PIRATES"
+        android:layout_below="@+id/btnchiefs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/drill"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/btnpirates"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtchiefs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/btnchiefs"
+        android:layout_alignBottom="@+id/btnchiefs"
+        android:layout_toRightOf="@+id/btnchiefs"
+        android:layout_toEndOf="@+id/btnchiefs" />
+
+    <TextView
+        android:id="@+id/txtpirates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView10"
+        android:layout_alignLeft="@+id/txtchiefs"
+        android:layout_alignStart="@+id/txtchiefs"
+        android:layout_marginBottom="13dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView10"
+        android:layout_toEndOf="@+id/btnpirates"
+        android:layout_toRightOf="@+id/btnpirates"
+        android:text="reset" />
+
+
+</RelativeLayout>
